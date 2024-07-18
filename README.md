@@ -51,7 +51,7 @@ Welcome to the Global Economy Indicators Study and Forecast Predictor repository
 
   - ![Streamlit](https://img.shields.io/badge/Streamlit-black?style=flat-square&logo=streamlit)
     - Integration of ![Azure ML](https://img.shields.io/badge/-Azure%20ML-0078D4?style=flat-square&logo=microsoftazure&logoColor=white) for real-time GDP predictions
-    - Deployment link will be added soon.
+    - Check the [Streamlit app](https://global-economy-indicators-research-study.streamlit.app/)!
 
 ### 4. Model Comparisons
 - **Predictive Models Used:**
