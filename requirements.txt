@@ -1,0 +1,46 @@
+### LIBRERÍAS NECESARIAS PARA EL PROYECTO
+## Librerías principales
+# Para trabajar con datos
+numpy==1.23.5
+pandas==1.5.3
+protobuf==3.20.0
+
+# Para visualizar datos con gráficos
+matplotlib==3.9.0
+seaborn==0.13.2
+plotly==5.22.0
+plotly.express==0.4.1
+
+
+# Para trabajar con tests estadísticos
+scipy==1.13.0
+
+# Para trabajar con series temporales
+statsmodels==0.14.2
+pmdarima==2.0.4
+neuralprophet==0.6.2
+scikit-learn==1.4.2
+ipywidgets==8.1.3
+
+## Librerías para vídeos
+# Para realizar un vídeo con los datos
+bar_chart_race==0.1.0
+ffmpeg-python==0.2.0
+
+## Librerías para países
+# Para poder trabajar con países
+geopy==2.4.1
+pycountry_convert==0.7.2
+
+## Librerías Para Web Scraping
+# Para guardar información en un archivo Excel:
+XlsxWriter==3.2.0
+
+# Para manejar las peticiones de acceso a la web y descarga de contenido.
+requests==2.32.1
+
+# Para el manejo de los datos descargados.
+beautifulsoup4==4.12.3
+
+## Librerías para Streamlit
+streamlit==1.36.0
