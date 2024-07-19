@@ -266,16 +266,16 @@ def analisis(): #función para mostrar un conjunto de gráficas en formato matri
         df_otros = data[data["Country"].isin(otros)]
         
         # Agrupamos otro por país y año y calculamos el total de Consumo gubernamental
-        df_otros_total = df_otros.groupby(['Country', 'Year'])['Consumption'].sum().reset_index()
+        df_otros_total = df_otros.groupby(['Country', 'Year'])['Gov_Consumption'].sum().reset_index()
         # Agrupamos la eurozona por año y calculamos su consumo total
-        df_eurozona_total = df_eurozona.groupby('Year')['Consumption'].sum().reset_index()
+        df_eurozona_total = df_eurozona.groupby('Year')['Gov_Consumption'].sum().reset_index()
         df_eurozona_total['Country'] = 'Eurozone'
 
         df_combined_gov = pd.concat([df_otros_total, df_eurozona_total], ignore_index=True)
 
-        fig = px.line(df_combined_gov, x='Year', y='Consumption', color='Country',
+        fig = px.line(df_combined_gov, x='Year', y='Gov_Consumption', color='Country',
                     title='Annual Government Consumption: Eurozone vs Other Countries',
-                    labels={'consumption': 'Total Government Consumption', 'Year': 'Year'},
+                    labels={'Gov_Consumption': 'Total Government Consumption', 'Year': 'Year'},
                     color_discrete_map={'Eurozone': '#001489',
                                         'United States': '#6fa8dc',
                                         'China': '#FF0000',
